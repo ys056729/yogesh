@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="YK.jpeg" class="logo">
+                <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fas fa-times" onclick="closemenu()"></i>   
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Web Developer</h3>
+                <h1>Hi, I'M <Span>Yogesh Kumar <br>Singh</Span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="yogesh.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Hi, I'm Yogesh Kumar Singh!<br>I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. With a keen eye for detail and a love for innovative solutions, I create engaging and user-friendly web experiences. I'm always looking to expand my skill set and stay up-to-date with the latest web development trends. When I'm not coding, you can find me exploring new technologies and sharing my knowledge with others. Let's connect and build something amazing together!</p>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">experiences</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>Createing content and layout of a webpage using elements</li>
+                            <li><span>CSS</span><br>Controls the appearance (e.g., colors, fonts, spacing, layout)</li>
+                            <li><span>JavaScript</span><br>Adds interactivity and dynamic features like animations, form validation, or fetching data from a server.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Buddy4Study</span><br>SEO Executive <br>December 2022 - Current</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>10th</span><br>RBSE Board Get 75%</li>
+                            <li><span>12th</span><br>RBSE Board Get 69%</li>
+                            <li><span>BCA</span><br>BRIJ University Get 80%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------Services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <Div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>User Interface (UI) Design</h2>
+                    <ul><li>Creating responsive and visually appealing layouts.</li>
+                       <li>Implementing buttons, forms, and navigation menus for an intuitive user experience.</li>
+                    </ul>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Interactive Features</h2>
+                    <ul><li>Adding interactivity with JavaScript (e.g., sliders, dropdowns, modals).</li>
+                    <li>Handling real-time updates using APIs for dynamic content.</li>
+                    </ul>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-google"></i>
+                    <h2>Performance & Compatibility</h2>
+                    <ul>
+                        <li>Optimizing web performance for fast load times.</li>
+                        <li>Ensuring cross-browser and cross-device compatibility.</li>
+                    </ul>
+                    <a href="#">Learn More</a>
+                </div>
+            </Div>
+        </div>
+    </div>
+    <!-------------------------------------------Portfolio---------------------->
+    <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <Div class="work-list">
+            <div class="work">
+                <img src="htmls.avif">
+                <div class="layer">
+                    <h2>Building User Interfaces</h2>
+                    <p>Translate design mockups into responsive and accessible web pages using HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="css.avif">
+                <div class="layer">
+                    <h2>Implementing Interactivity</h2>
+                    <p>Add dynamic features like dropdown menus, modals, and animations to enhance user engagement.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="js.avif">
+                <div class="layer">
+                    <h2>Optimizing Performance</h2>
+                    <p>Ensure fast loading times, responsiveness across devices, and compatibility with various browsers.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </Div>
+        <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!------------------------------------Contact----------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ys056729@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9782528686</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/@yashthakur.yashthakur.92798"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://x.com/YogeshK17509278"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/yashthakur9128/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yogesh-kumar-singh-21b283257/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="My CV" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright by @Yogesh Kumar Singh </p>
+        </div>
+    </div>
+    <!---------------------------------Javasccript------------------------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tablinks = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tablink of tablinks){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmnFCZybNSzTfEwbkDgnHbLFPH8xfKHRj0Z3DFhPDcJ5F9DtryCUFJ61cR0nUuN-9B/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
